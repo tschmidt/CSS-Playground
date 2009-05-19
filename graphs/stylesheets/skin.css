@@ -1,0 +1,106 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+}
+
+/*
+==============================================================================
+	Grapher Style
+==============================================================================
+*/
+
+.grapher,
+.grapher li {
+	list-style: none;
+	margin: 0 0 0.77em;
+	padding: 0;
+}
+
+.grapher {
+	border: 1px solid #e5e5e5;
+	padding: 0.77em;
+	position: relative;
+	overflow: hidden;
+	_overflow: visible;
+	zoom: 1;
+}
+
+	.grapher li {
+		display: inline;
+		float: left;
+		margin: 0 1px 0 0;
+		position: relative;
+		text-align: center;
+		width: 40px;
+	}
+	
+	.grapher a {
+		color: #fff;
+		display: block;
+		font-weight: bold;
+		position: relative;
+		text-decoration: none;
+	}
+	
+	.grapher a:hover .count {
+		background-color: #333;
+	}
+	
+.label {
+	color: #aaa;
+	display: block;
+	padding: 0.385em 0;
+	text-align: center;
+	width: 100%;
+}
+
+.count {
+	background-color: #ddd;
+	display: block;
+	position: relative;
+}
+
+	.count em {
+		bottom: 3px;
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
+	
+/*
+==============================================================================
+	Grapher Vertical
+==============================================================================
+*/
+
+.grapher.vertical li {
+	display: block;
+	float: none;
+	margin: 0 0 1px;
+	overflow: hidden;
+	_overflow: normal;
+	zoom: 1;
+	text-align: left;
+	width: 100%;
+}
+
+.grapher.vertical .label {
+	display: block;
+	float: left;
+	line-height: 30px;
+	width: 40px;
+}
+
+.grapher.vertical .count {
+	display: block;
+	height: 40px;
+	line-height: 45px;
+	float: left;
+	position: relative;
+	text-align: right;
+}
+
+	.grapher.vertical .count em {
+		padding: 0 0.77em 0 0;
+		position: relative;
+	}
