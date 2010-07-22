@@ -1,0 +1,81 @@
+/* 
+
+	Skin
+	
+	Author:			Your Name
+	Date:			Today's Date
+	
+	Description:
+	===============================================================
+	Place styles that will affect the look and feel for your site.
+	You should not have to modify reset.css, typography.css, grids.css
+	or application.css if you are using the grids css system.
+
+*/
+
+.timeline {
+	margin: 15em auto;
+	width: 960px;
+}
+
+.events, .events li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 0.77em 0;
+}
+
+	.events li {
+		border-radius: 0.77em;
+		-webkit-border-radius: 0.77em;
+		-moz-border-radius: 0.77em;
+		background-color: #eee;
+		border: 1px solid #ddd;
+		color: #707070;
+		font-weight: bold;
+		margin-bottom: 0.462em;
+		padding: 0.231em 0;
+		position: relative;
+		text-align: center;
+	}
+	
+	.events li:hover {
+		background-color: #353535;
+		color: #e5e5e5;
+	}
+		
+		.events li em {
+			color: #aaa;
+			font-weight: normal;
+			font-size: 0.9em;
+		}
+
+.intervals, .intervals li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+	/* 
+		The width depends on the number of intervals. For example 100 / 7 = 14.29%.
+		Don't forget to take into acount the border width and subtract that from
+		100.
+	*/
+	.intervals li {
+		background-color: #fff;
+		border-right: 1px solid #ccc;
+		color: #999;
+		float: left;
+		margin: 0;
+		padding:  0.5em 0;
+		text-align: center;
+		width: 14.14%;
+	}
+	
+	.intervals.two li {
+		width: 24.85%;
+	}
+	
+	.intervals li.first {
+		border-left: 1px solid #ccc;
+	}
