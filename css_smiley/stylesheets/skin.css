@@ -1,0 +1,184 @@
+/* 
+
+	Skin
+	
+	Author:			Terry Schmidt
+	Date:				Today's Date
+	
+	Description:
+	===============================================================
+	Place styles that will affect the look and feel for your site.
+	You should not have to modify reset.css, typography.css, grids.css
+	or application.css if you are using the grids css system.
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Cantarell);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+body {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Cantarell', arial, sans-serif;
+}
+
+#container {
+	background-color: #fff;
+	margin: 2.30em auto;
+	padding: 0.77em;
+	width: 73.85em;
+	
+	border: 1px solid silver;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	
+	-webkit-box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	
+}
+
+#container > header h1 {
+	border-bottom: 2px solid #e5e5e5;
+	padding-bottom: 0.385em;
+	margin-bottom: 1em;
+}
+
+	#container > header h1 span {
+		color: #6b99bf;
+	}
+
+.clearfix {
+	overflow: hidden;
+	_overflow: visible;
+	zoom: 1;
+}
+
+pre {
+	background-color: #f6f6f6;
+	font-family: 'Droid Sans Mono', Monaco, 'Lucida Console', Consolas, 'Courier New', monospace;
+	margin-top: 0.77em;
+	overflow: auto;
+	padding: 0.77em;
+	
+	border: 1px solid silver;
+	border-radius: 					5px;
+	-moz-border-radius: 		5px;
+	-webkit-border-radius: 	5px;
+	-khtml-border-radius:		5px;
+	
+	-webkit-box-shadow: inset 0px 2px 3px rgba(0,0,0,.2);
+	-moz-box-shadow: 		inset 0px 2px 3px rgba(0,0,0,.2);
+	box-shadow: 				inset 0px 2px 3px rgba(0,0,0,.2);
+}
+
+table {
+	background-color: #efefef;
+	border-collapse: collapse;
+	border-color: #999;
+	width: 100%;
+}
+
+tr, td, th {
+	border-color: #ccc;
+}
+
+tr:nth-child(even) {
+	background-color: #f5f5f5;
+}
+
+th {
+	background-color: #444;
+	color: #fff;
+}
+
+/*
+   ===============================================================
+			Smiley
+   ===============================================================
+*/
+
+.smileyContainer {
+	width: 300px;
+	height: 300px;
+	margin: 30px auto;
+	background-color: rgb(68,165,58);
+	border: 3px solid rgb(56,107,58);
+	position: relative;
+	
+	border-radius: 300px;
+	-moz-border-radius: 300px;
+	-webkit-border-radius: 300px;
+	-khtml-border-radius: 300px;
+}
+
+.eye {
+	background-color: rgb(255,255,255);
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	
+	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,.6);
+	-moz-box-shadow: 0px 2px 3px rgba(0,0,0,.6);
+	box-shadow: 0px 2px 3px rgba(0,0,0,.6);
+	
+	
+	border-radius: 60px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	-khtml-border-radius: 60px;
+}
+
+	.left.eye {
+		top: 75px;
+		left: 50px;
+	}
+	
+	.right.eye {
+		height: 60px;
+		width: 60px;
+		top: 90px;
+		left: 190px;
+	}
+	
+	.pupil {
+		position: absolute;
+		background-color: rgb(0,0,0);
+		height: 40px;
+		width: 40px;
+		bottom: 9px;
+		right: 9px;
+		
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-khtml-border-radius: 20px;
+	}
+	
+	.right.eye .pupil {
+		height: 20px;
+		width: 20px;
+		left: 9px;
+	}
+	
+.tooth {
+	border-color: transparent transparent rgb(255,255,255) transparent;
+	border-width: 19px 10px;
+	border-style: solid;
+	position: absolute;
+	bottom: 90px;
+	left: 90px;
+}
+
+.smile {
+	border: 2px solid rgb(0,0,0);
+	width: 190px;
+	margin: 207px auto 0 auto;
+	position: relative;
+	z-index: 99;
+	
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+}

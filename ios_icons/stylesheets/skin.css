@@ -1,0 +1,362 @@
+/* 
+
+	Skin
+	
+	Author:			Terry Schmidt
+	Date:				Today's Date
+	
+	Description:
+	===============================================================
+	Place styles that will affect the look and feel for your site.
+	You should not have to modify reset.css, typography.css, grids.css
+	or application.css if you are using the grids css system.
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Cantarell);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+body {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Cantarell', arial, sans-serif;
+}
+
+#container {
+	background-color: #fff;
+	margin: 2.30em auto;
+	padding: 0.77em;
+	width: 73.85em;
+	
+	border: 1px solid silver;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	
+	-webkit-box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	
+}
+
+#container > header h1 {
+	border-bottom: 2px solid #e5e5e5;
+	padding-bottom: 0.385em;
+	margin-bottom: 1em;
+}
+
+	#container > header h1 span {
+		color: #6b99bf;
+	}
+
+.clearfix {
+	overflow: hidden;
+	_overflow: visible;
+	zoom: 1;
+}
+
+pre {
+	background-color: #f6f6f6;
+	font-family: 'Droid Sans Mono', Monaco, 'Lucida Console', Consolas, 'Courier New', monospace;
+	margin-top: 0.77em;
+	overflow: auto;
+	padding: 0.77em;
+	
+	border: 1px solid silver;
+	border-radius: 					5px;
+	-moz-border-radius: 		5px;
+	-webkit-border-radius: 	5px;
+	-khtml-border-radius:		5px;
+	
+	-webkit-box-shadow: inset 0px 2px 3px rgba(0,0,0,.2);
+	-moz-box-shadow: 		inset 0px 2px 3px rgba(0,0,0,.2);
+	box-shadow: 				inset 0px 2px 3px rgba(0,0,0,.2);
+}
+
+table {
+	background-color: #efefef;
+	border-collapse: collapse;
+	border-color: #999;
+	width: 100%;
+}
+
+tr, td, th {
+	border-color: #ccc;
+}
+
+tr:nth-child(even) {
+	background-color: #f5f5f5;
+}
+
+th {
+	background-color: #444;
+	color: #fff;
+}
+
+/*
+   ===============================================================
+			iOS Icons in Pure CSS
+   ===============================================================
+*/
+
+.iconContainer {
+	overflow: hidden;
+}
+
+.icon {
+	-webkit-box-shadow: rgba(0,0,0,0.496094) 0px 4px 6px;
+	background-color: #353535;
+	border-radius: 30px;
+	float: left;
+	height: 176px;
+	position: relative;
+	width: 176px;
+	margin: 50px;
+}
+
+.gloss {
+	-webkit-box-shadow: white 0px 2px 1px inset;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.85)), to(rgba(255,255,255,0.15)));
+	height: 90px;
+	width: 100%;
+	position: absolute;
+	
+	-webkit-border-top-right-radius: 38px;
+	-webkit-border-top-left-radius: 38px;
+	-webkit-border-bottom-right-radius: 120px 20px;
+	-webkit-border-bottom-left-radius: 120px 20px;
+	z-index: 99;
+}
+
+/*
+   ===============================================================
+			YouTube Icon
+   ===============================================================
+*/
+
+.youtube {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#79532F), to(#8c6546));
+	border: 2px solid rgba(148, 134, 121, 0.8300);
+}
+
+	.youtube .tv {
+		width: 160px;
+		height: 160px;
+		position: relative;
+		top: 8px;
+		left: 8px;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccb376), to(#f8ecce));
+		-webkit-border-radius: 24px;
+		-webkit-box-shadow: 0px -2px 3px #2f2917;
+	}
+	
+	.youtube .screen {
+		width: 140px;
+		height: 125px;
+		margin: auto;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#636c52), to(#8e9d74));
+		-webkit-border-radius: 44px;
+	}
+	
+	.youtube .screenBorder {
+		width: 140px;
+		height: 125px;
+		position: relative;
+		top: 4px;
+		left: 8px;
+		padding: 2px;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5a5f5a), to(#70805b));
+		-webkit-border-radius: 44px;
+		-webkit-box-shadow: 0px 2px 2px #fff;
+	}
+	
+	.youtube div.screenBorder div.gloss {
+		height: 60px;
+		width: 97.3%;
+		-webkit-border-top-right-radius: 70px;
+		-webkit-border-top-left-radius: 70px;
+	}
+	
+	.youtube .knob {
+		-webkit-border-radius: 20px;
+		width: 24px;
+		height: 24px;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4a3d42), to(#130f10));
+		-webkit-box-shadow: inset 0px 2px 0px #655657;
+		border: 1px solid #2b2326;
+	}
+	
+		.youtube .left.knob {
+			float: left;
+			margin: 1px 0 0 12px;
+		}
+		
+		.youtube .right.knob {
+			float: right;
+			margin: 1px 12px 0 0;
+		}
+		
+	.youtube .knobHandleCenter {
+		width: 16px;
+		height: 16px;
+		position: relative;
+		top: 4px;
+		left: 4px;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dadadb), to(#3f2c2a));
+		-webkit-border-radius: 12px;
+		-webkit-box-shadow: inset 0px 1px 1px #fff;
+	}
+	
+	.youtube .speakerGrill {
+		width: 20px;
+		float: left;
+		margin-top: 10px;
+		margin-left: 27px;
+		-webkit-box-reflect: right -8px;
+	}
+	
+	.youtube .speakerGrill .slit {
+		width: 2px;
+		height: 6px;
+		float: left;
+		background: #000;
+		margin-top: 4px;
+		margin-right: 3px;
+		-webkit-box-shadow: 0px 2px 0px #fff;
+		-webkit-border-top-left-radius: 2px;
+	  -webkit-border-bottom-left-radius: 2px;
+	}
+	
+	.youtube .speakerGrill .slit.two {
+		height: 10px;
+		margin-top: 2px;
+	}
+	
+	.youtube .speakerGrill .slit.three {
+		height: 12px;
+		margin-top: 1px;
+	}
+	
+	.youtube .speakerGrill .slit.four {
+		height: 14px;
+		margin-top: 0px;
+	}
+	
+/*
+   ===============================================================
+			Notes Icon
+   ===============================================================
+*/
+
+.notes {
+	background-color: #432e25;
+}
+
+.notes .topper {
+	height: 50px;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b28b78), to(#190a07), color-stop(.92, #432e25), color-stop(.1, #835a4d));
+	-webkit-border-top-right-radius: 30px;
+	-webkit-border-top-left-radius: 30px;
+	-webkit-box-shadow: inset 0px 2px 1px rgba(255,255,255,0.2);
+}
+
+.notes .paper {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#78745c), to(#f9f4b7), color-stop(.05, #bcb98c), color-stop(.08, #fef9be));
+	height: 126px;
+	-webkit-border-bottom-right-radius: 30px;
+	-webkit-border-bottom-left-radius: 30px;
+}
+
+.notes .margin {
+	width: 3px;
+	background: transparent;
+	height: 126px;
+	border: 1px double rgba(193,23,0,0.3);
+	border-top: none;
+	border-bottom: none;
+	margin-left: 22px;
+}
+
+.notes .line {
+	float: left;
+	width: 176px;
+	height: 1px;
+	border-bottom: 1px solid rgba(1, 52, 193, .2);
+	margin-top: 17px;
+}
+
+.notes .line.last {
+	width: 166px;
+	margin-left: 5px;
+}
+
+/*
+   ===============================================================
+			iDisk Icon
+   ===============================================================
+*/
+
+.idisk {
+	background-color: #4c5fbb;
+}
+
+.idisk .top {
+	height: 140px;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4c5fb8), to(#00b6f1), color-stop(.5, #004de4));
+	position: relative;
+	-webkit-border-top-left-radius: 30px;
+  -webkit-border-top-right-radius: 30px;
+  -webkit-box-shadow: inset 0px 0px 5px #54d0f7;
+}
+
+.idisk .bottom {
+	height: 36px;
+	border-top: 1px solid #326d94;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eaeaea), color-stop(.1, #eaeaea));
+	position: relative;
+	-webkit-border-bottom-left-radius: 30px;
+  -webkit-border-bottom-right-radius: 30px;
+}
+
+.idisk .puff {
+	background-color: #fff;
+	position: absolute;
+	z-index: 1;
+	-webkit-border-radius: 40px;
+}
+
+.idisk .base.puff {
+	width: 130px;
+	margin: auto;
+	height: 50px;
+	top: 75px;
+	left: 22px;
+	-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,.2);
+}
+
+.idisk .large.puff {
+	width: 60px;
+	height: 60px;
+	top: 35px;
+	left: 75px;
+}
+
+.idisk .small.puff {
+	width: 35px;
+	height: 35px;
+	top: 50px;
+	left: 45px;
+}
+
+.idisk .bottom .led {
+	background-color: #fdfa4e;
+	float: right;
+	width: 10px;
+	height: 10px;
+	margin-top: 12px;
+	margin-right: 22px;
+	border: 1px solid #333;
+	-webkit-box-shadow: inset 0px 0px 4px #c87300;
+	-webkit-border-radius: 10px;
+}

@@ -1,0 +1,185 @@
+/* 
+
+	Skin
+	
+	Author:			Terry Schmidt
+	Date:				Today's Date
+	
+	Description:
+	===============================================================
+	Place styles that will affect the look and feel for your site.
+	You should not have to modify reset.css, typography.css, grids.css
+	or application.css if you are using the grids css system.
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Cantarell);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+body {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Cantarell', arial, sans-serif;
+}
+
+#container {
+	background-color: #fff;
+	margin: 2.30em auto;
+	padding: 0.77em;
+	width: 73.85em;
+	
+	border: 1px solid silver;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	
+	-webkit-box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	
+}
+
+#container > header h1 {
+	border-bottom: 2px solid #e5e5e5;
+	padding-bottom: 0.385em;
+	margin-bottom: 1em;
+}
+
+	#container > header h1 span {
+		color: #6b99bf;
+	}
+
+.clearfix {
+	overflow: hidden;
+	_overflow: visible;
+	zoom: 1;
+}
+
+pre {
+	background-color: #f6f6f6;
+	font-family: 'Droid Sans Mono', Monaco, 'Lucida Console', Consolas, 'Courier New', monospace;
+	margin-top: 0.77em;
+	overflow: auto;
+	padding: 0.77em;
+	
+	border: 1px solid silver;
+	border-radius: 					5px;
+	-moz-border-radius: 		5px;
+	-webkit-border-radius: 	5px;
+	-khtml-border-radius:		5px;
+	
+	-webkit-box-shadow: inset 0px 2px 3px rgba(0,0,0,.2);
+	-moz-box-shadow: 		inset 0px 2px 3px rgba(0,0,0,.2);
+	box-shadow: 				inset 0px 2px 3px rgba(0,0,0,.2);
+}
+
+table {
+	background-color: #efefef;
+	border-collapse: collapse;
+	border-color: #999;
+	width: 100%;
+}
+
+tr, td, th {
+	border-color: #ccc;
+}
+
+tr:nth-child(even) {
+	background-color: #f5f5f5;
+}
+
+th {
+	background-color: #444;
+	color: #fff;
+}
+
+/*
+   ===============================================================
+			3D CardFlip
+   ===============================================================
+*/
+
+#cardContainer {
+	height: 356px;
+	width: 320px;
+	
+	/* Disable tap highlighting  */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	
+	/* Gives some depth to the card */
+	-webkit-perspective: 500;
+}
+
+.card {
+	position: absolute;
+	height: 300px;
+	width: 200px;
+	left: 60px;
+	top: 28px;
+	
+	/* Ensures that the card lives correctly in 3D space */
+	-webkit-transform-style: preserve-3d;
+	
+	/*
+		We apply this property to the card so it can smoothly flip between
+		it's sides
+	*/
+	-webkit-transition-property: -webkit-transform;
+	
+	/* Makes the animation occur over a period of 1.5 seconds */
+	-webkit-transition-duration: 1.5s;
+}
+
+.card.flipped {
+	/*
+		Rotate the card 180 degrees along the y-axis. This animation allows
+		the card to toggle between its regular and flipped states.
+	*/
+	-webkit-transform: rotateY(180deg);
+}
+
+.face {
+	position: absolute;
+	height: 300px;
+	width: 200px;
+	
+	/* Give a round layout to the card */
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	
+	/* Drop Shadow around the card */
+	-webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+	
+	/*
+		Setting this property to hidden ensures that the "back side" of
+		the card is hidden when the card is flipped.
+	*/
+	-webkit-backface-visibility: hidden;
+}
+
+/* Styles the suit characters */
+.face > p {
+	line-height: 1.6;
+	margin-top: -70px;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 92px;
+}
+
+.front {
+	color: rgb(78, 150, 249);
+	background-color: rgb(34, 65, 108);
+}
+
+.back {
+	color: rgb(34, 65, 108);
+	background-color: rgb(78, 150, 249);
+	
+	/* Ensure the "back side" is flipped already */
+	-webkit-transform: rotateY(180deg);
+}

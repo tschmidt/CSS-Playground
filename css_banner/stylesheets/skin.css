@@ -1,0 +1,247 @@
+/* 
+
+	Skin
+	
+	Author:			Terry Schmidt
+	Date:				Today's Date
+	
+	Description:
+	===============================================================
+	Place styles that will affect the look and feel for your site.
+	You should not have to modify reset.css, typography.css, grids.css
+	or application.css if you are using the grids css system.
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Cantarell);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+body {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Cantarell', arial, sans-serif;
+	line-height: 1;
+}
+
+#container {
+	background-color: #fff;
+	margin: 2.30em auto;
+	padding: 0.77em;
+	width: 73.85em;
+	
+	border: 1px solid silver;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	
+	-webkit-box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	
+}
+
+#container > header h1 {
+	border-bottom: 2px solid #e5e5e5;
+	padding-bottom: 0.385em;
+	margin-bottom: 1em;
+}
+
+	#container > header h1 span {
+		color: #6b99bf;
+	}
+
+.clearfix {
+	overflow: hidden;
+	_overflow: visible;
+	zoom: 1;
+}
+
+pre {
+	background-color: #f6f6f6;
+	font-family: 'Droid Sans Mono', Monaco, 'Lucida Console', Consolas, 'Courier New', monospace;
+	margin-top: 0.77em;
+	overflow: auto;
+	padding: 0.77em;
+	
+	border: 1px solid silver;
+	border-radius: 					5px;
+	-moz-border-radius: 		5px;
+	-webkit-border-radius: 	5px;
+	-khtml-border-radius:		5px;
+	
+	-webkit-box-shadow: inset 0px 2px 3px rgba(0,0,0,.2);
+	-moz-box-shadow: 		inset 0px 2px 3px rgba(0,0,0,.2);
+	box-shadow: 				inset 0px 2px 3px rgba(0,0,0,.2);
+}
+
+table {
+	background-color: #efefef;
+	border-collapse: collapse;
+	border-color: #999;
+	width: 100%;
+}
+
+tr, td, th {
+	border-color: #ccc;
+}
+
+tr:nth-child(even) {
+	background-color: #f5f5f5;
+}
+
+th {
+	background-color: #444;
+	color: #fff;
+}
+
+/*
+   ===============================================================
+			MISC
+   ===============================================================
+*/
+
+h2 {
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+.bannerContainer {
+	margin: 50px auto;
+	width: 400px;
+}
+
+.bubble {
+	clear: both;
+	margin: 0 auto;
+	width: 350px;
+	background-color: #fff;
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	
+	-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+	
+	position: relative;
+	z-index: 90;
+}
+
+.rectangle {
+	background-color: rgba(127,157,185,0.98);
+	height: 50px;
+	width: 380px;
+	position: relative;
+	left: -15px;
+	top: 30px;
+	float: left;
+	
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	
+	z-index: 100;
+}
+
+.rectangle h2 {
+	font-size: 30px;
+	color: #fff;
+	padding-top: 6px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-align: center;
+}
+
+.sup {
+	font-size: 14px;
+	top: -3px;
+	position: relative;
+	vertical-align: super;
+}
+
+.triangle {
+	border-color: transparent #7d90a3 transparent transparent;
+	border-style: solid;
+	border-width: 0px 15px 15px 0px;
+	height: 0px;
+	width: 0px;
+	
+	position: absolute;
+	top: 50px;
+	z-index: -1;
+}
+
+.triangle.right {
+	border-color: transparent transparent transparent #7d90a3;
+	border-width: 0px 0px 15px 15px;
+	right: 0px;
+}
+
+.info {
+	padding: 100px 25px 35px 25px;
+}
+
+	.info h2 {
+		font-size: 20px;
+	}
+	
+.menu {
+	position: relative;
+	top: -10px;
+	left: 50px;
+	z-index: 80;
+}
+
+	.menu ul,
+	.menu ul li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.menu ul li {
+		width: 80px;
+		overflow: hidden;
+		margin: 0px;
+		margin-right: -35px;
+		padding: 5px;
+		float: left;
+		background-color: #7f9db9;
+		text-align: right;
+		
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+	}
+	
+	.menu ul li a {
+		color: #fff;
+		text-decoration: none;
+		display: block;
+	}
+	
+	.menu ul li:nth-child(1) {
+		background: rgb(131,178,51);
+	}
+	
+	.menu ul li:hover:nth-child(1) {
+		background: rgba(131,178,51, 0.8);
+	}
+	
+	.menu ul li:nth-child(2) {
+		background: rgb(196,89,30);
+	}
+	
+	.menu ul li:hover:nth-child(2) {
+		background: rgba(196,89,30,0.8);
+	}
+	
+	.menu ul li:nth-child(3) {
+		background: rgb(65,117,160);
+	}
+	
+	.menu ul li:hover:nth-child(3) {
+		background: rgba(65,117,160,0.8);
+	}
